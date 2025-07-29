@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="css/formulario.css">
+        <link rel="shortcut icon" href="img/formulario.png">
+        <title>Formulario de registro</title>
+    </head>
+    <body>
+
+         <!--Nav-->
+    <header class="main-header">
+        <label for="btn-nav" class="btn-nav"><img src="img/menu.png" alt="logo" width="25px"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="btn-nav">
+        
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="index.html#recetas">Categorias</a></li>
+            <li><a href="registro.html">Registrar receta</a></li>
+            <li><a href="recetas.html">Mis recetas</a></li>
+            <li><a href="desarrolladores.html">Desarrolladores</a></li>
+          </ul>
+        </nav>
+      </header><br><br>
+      <!--Nav-->
+
+
+        <form action="https://formspree.io/f/mayrpqgp" method="POST" autocomplete="off">
+            <h1>Registro</h1><br>
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="text" name="lastname" placeholder="Apellidos" required>
+                <label for="date" style="text-align: left;"><b>Fecha de nacimiento</b></label>
+                <input type="date" name="date" placeholder="Fecha de nacimiento" required>
+                <input type="text" name="direccion" placeholder="País" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Teléfono" required>
+            
+                <label for="date" style="text-align: left;"><b>¿Qué categoría te gustaría que implementemos?</b></label>
+                <select name="categoria" id="categoria" required>
+                    <option id="categoria" value="categoria" selected disabled>Tipo de comida</option>
+                    <option id="categoria" value="categoria">Comida Japonesa</option>
+                    <option id="categoria" value="categoria">Comida rápida</option>
+                    <option id="categoria" value="categoria">Comida Italiana</option>
+                    <option id="categoria" value="categoria">Comida Peruana</option>
+                </select>
+
+            <textarea name="message" cols="30" rows="5" placeholder="Mensaje" style="resize: none;"></textarea>
+            <center>
+            <input type="submit" class="button_slide" value="Enviar" onclick="registro()">
+            </center>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/recetario/www/index.html">
+            <input type="hidden" name="_captcha" value="false">
+            </div>
+        </form>
+       
+        <script src="js/formulario.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>

@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+body {
+    background-color: #3e5b79;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #b6bec0;
+    background-image: url(fondo3.jpeg);
+    opacity: .96;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+textarea{
+    text-align: justify;
+    border-radius: 10px;
+    resize: none;
+    cursor: default;
+}
+
+.receta-container {
+    text-align: center;
+    background-color: #b6bec0; 
+    opacity: .96;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 400px;
+    outline: 2px solid white;
+}
+
+@media (max-width: 844px) {
+    .receta-container {
+        width: 340px; 
+    }
+    textarea{
+        width: 280px;
+    }
+}
+
+.receta-titulo {
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.receta-img {
+    max-width: 90%;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    outline: 2px solid #6d2e02; 
+}
+
+.receta-texto {
+    color: #6d2e02;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: default;
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.receta-botones {
+    margin-top: 15px;
+}
+
+.editar,
+.eliminar {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 5px;  
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+    border-color: #6d2e02;
+    border-width: 3px;
+    border-style: solid;
+    background-color: #b47846;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.editar:hover,
+.eliminar:hover {
+    background-color: #12243a; 
+}
+
+
+.form-editar{
+    width: 400px;
+    background: #b6bec0;
+    padding: 30px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 8px; 
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 900;
+    font-style: normal;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    margin-bottom: 30px;
+    border: 2px solid #fff;
+}
+
+@media (max-width: 844px) {
+    .form-editar {
+        width: 320px; 
+    }
+    .file-select {
+        width: 280px;
+        padding-right: 20px; 
+    }
+}
+
+.form-editar h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+.controls{
+    width: 100%;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #f7f7f7;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.form-editar label{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    color: black;
+    font-size: x-large;
+}
+
+.form-editar a:hover{
+    color: lightblue;
+
+}
+
+.form-editar .btn{
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    border-color: #6d2e02;
+    border-width: 3px;
+    border-style: solid;
+    background-color: #b47846;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.form-editar h2{
+    text-align: center;
+    color: black;
+    font-family: "Truculenta", sans-serif;
+    font-size: 40px;
+    font-optical-sizing: auto;;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+
+h1{
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h1.x{
+    color: #6d2e02;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-shadow:  2px 5px #b47846;
+    border: #b47846;
+}
+
+.file{
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 14px;
+    border-color: #6d2e02;
+    border-width: 3px;
+    border-style: solid;
+    background-color: #b47846;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;   
+    border-radius: 4px;
+}
+
+
+/* Navegador */
+:root{
+    --main-color:#fff;
+  }
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  
+  .main-header{
+    background: #3e5b79;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0; 
+    z-index: 1000;
+  }
+  
+  nav{
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 200px;
+    height: calc(100vh - 50px);
+    background: #12243a;
+    transform: translateX(-100%);
+    transition: .4s ease;
+    z-index: 1000;
+  }
+  
+  .navigation li{
+    list-style:none;
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+  }
+  
+  .navigation a{
+    color:var(--main-color);
+    display: block;
+    line-height:3.5;
+    padding: 0 10px;
+    text-decoration:none;
+    transition:.4s ease;
+  }
+  
+  .navigation a:hover{
+    transform:translateX(10%);
+  }
+  
+  #btn-nav{
+    display: none;
+  }
+  
+  #btn-nav:checked ~ nav{
+    transform:translateX(0);
+  }
+  
+  .btn-nav{
+    color:var(--main-color);
+    font-size:30px;
+    position: absolute;
+    left:0;
+    top:0;
+    cursor:pointer;
+    padding:6.5px 15px;
+    transition:.2s ease;
+    background:transparent
+  }
+  
+  .btn-nav:hover{
+    background: transparent;
+  }
